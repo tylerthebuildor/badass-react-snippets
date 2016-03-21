@@ -16,6 +16,9 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "bugs": {
+    "url": "https://github.com/tylerbuchea/badass-react-snippets/issues"
+  },
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
