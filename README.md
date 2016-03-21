@@ -1,4 +1,4 @@
-# Badass React Snippets
+# Badass React Snippets [![Build Status](https://travis-ci.org/tylerbuchea/badass-react-snippets.svg?branch=master)](https://travis-ci.org/tylerbuchea/badass-react-snippets)
 **Package for Github's Atom Editor**
 
 ## Installation
