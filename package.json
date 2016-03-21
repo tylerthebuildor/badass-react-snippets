@@ -1,0 +1,24 @@
+{
+  "name": "badass-react-snippets",
+  "version": "0.0.1",
+  "description": "Only the finest React ES6 snippets for Atom",
+  "keywords": [
+    "react",
+    "ES6",
+    "babel",
+    "snippets"
+  ],
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": "https://github.com/tylerbuchea/badass-react-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-lintspaces": "^0.4.1"
+  }
+}

@@ -1,0 +1,72 @@
+".source.js":
+
+  "React ES6 Component":
+    "prefix": "rc",
+    "body": """
+      import React, {
+        PropTypes,
+      } from 'react';
+
+      export default class ${1:MyComponent} extends React.Component {
+        render() {
+          return (
+            ${2:<View></View>}
+          );
+        }
+      }
+
+      ${1}.propTypes = {
+        style: PropTypes.number,
+      };
+    """
+
+  "React ES6 Component with Constructor":
+    "prefix": "rcc",
+    "body": """
+      import React, {
+        PropTypes,
+      } from 'react';
+
+      export default class ${1:MyComponent} extends React.Component {
+        constructor(props) {
+          super(props);
+        }
+
+        render() {
+          return (
+            ${2:<View></View>}
+          );
+        }
+      }
+
+      ${1}.propTypes = {
+        style: PropTypes.number,
+      };
+    """
+
+  'React ES6 Constructor':
+    'prefix': 'rconst'
+    'body': """
+      constructor(props) {
+        super(props);
+        ${1}
+      }
+    """
+
+  'React ES6 Functional Component':
+    'prefix': 'rfunc'
+    'body': """
+      import React, {
+        PropTypes,
+      } from 'react';
+
+      export function ${1}(props) {
+        return (
+          ${2:<View></View>}
+        );
+      }
+
+      ${1}.propTypes = {
+        style: PropTypes.number,
+      };
+    """
