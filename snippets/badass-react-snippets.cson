@@ -5,7 +5,7 @@
     "body": """
       import React, {
         PropTypes,
-      } from 'react';
+      } from 'react-native';
 
       export default class ${1:MyComponent} extends React.Component {
         render() {
@@ -25,7 +25,7 @@
     "body": """
       import React, {
         PropTypes,
-      } from 'react';
+      } from 'react-native';
 
       export default class ${1:MyComponent} extends React.Component {
         constructor(props) {
@@ -58,7 +58,7 @@
     'body': """
       import React, {
         PropTypes,
-      } from 'react';
+      } from 'react-native';
 
       export function ${1}(props) {
         return (
