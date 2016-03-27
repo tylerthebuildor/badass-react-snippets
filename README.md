@@ -9,10 +9,19 @@ cd badass-react-snippets
 apm link
 ```
 
-After install just type one of the titles below and hit tab then the snippet will expand in your editor. Only works on files already saved as `.js`
+## About
+These snippets are made to work with the latest ES6 standards, adhere to the [airbnb eslint config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb), and are React/React-Native agnostic.
 
-These snippets are made to work with the latest ES6 standards and are React/React-Native agnostic.
+**Add the airbnb config to your project**
+```
+npm install --save-dev eslint-config-airbnb babel-eslint eslint-plugin-react eslint
+echo '\''{ extends: [airbnb], }'\'' > .eslintrc'
+```
 
+## Usage
+After install just type one of the titles below and hit tab then the snippet will expand in your editor. Only works on files already saved as `.js` or `.jsx`
+
+Continue hitting tab to cycle through and highlight common editing points in a snippet. The `${N}` syntax in the examples below denote the highlight points.
 
 ## rcc
 **React ES6 Component**
