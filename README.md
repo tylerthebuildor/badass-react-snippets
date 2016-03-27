@@ -12,7 +12,7 @@ apm link
 ## About
 These snippets are made to work with the latest ES6 standards, adhere to the [airbnb eslint config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb), and are React/React-Native agnostic.
 
-**Add the airbnb config to your project**
+**Add the airbnb config to your project (optional)**
 ```
 npm install --save-dev eslint-config-airbnb babel-eslint eslint-plugin-react eslint
 echo '\''{ extends: [airbnb], }'\'' > .eslintrc'
