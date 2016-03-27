@@ -8,7 +8,8 @@
     "babel",
     "snippets",
     "airbnb",
-    "react-native"
+    "react-native",
+    "ES2015"
   ],
   "scripts": {
     "test": "gulp"

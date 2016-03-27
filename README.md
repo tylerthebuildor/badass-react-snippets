@@ -1,14 +1,6 @@
 # Badass React Snippets [![Build Status](https://travis-ci.org/tylerbuchea/badass-react-snippets.svg?branch=master)](https://travis-ci.org/tylerbuchea/badass-react-snippets)
 **Package for Github's Atom Editor**
 
-## Installation
-
-``` bash
-git clone https://github.com/tylerbuchea/badass-react-snippets
-cd badass-react-snippets
-apm link
-```
-
 ## About
 These snippets are made to work with the latest ES6 standards, adhere to the [airbnb eslint config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb), and are React/React-Native agnostic.
 
@@ -16,6 +8,12 @@ These snippets are made to work with the latest ES6 standards, adhere to the [ai
 ```
 npm install --save-dev eslint-config-airbnb babel-eslint eslint-plugin-react eslint
 echo '\''{ extends: [airbnb], }'\'' > .eslintrc'
+```
+
+## Installation
+
+``` bash
+apm install badass-react-snippets
 ```
 
 ## Usage
