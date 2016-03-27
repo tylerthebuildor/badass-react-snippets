@@ -5,9 +5,7 @@
 
 ``` bash
 git clone https://github.com/tylerbuchea/badass-react-snippets
-
-# Enter cloned folder
-
+cd badass-react-snippets
 apm link
 ```
 
@@ -15,6 +13,7 @@ After install just type one of the titles below and hit tab then the snippet wil
 
 
 ## rcc
+**React ES6 Component**
 
 ``` javascript
 import React, {
@@ -39,6 +38,7 @@ ${1}.propTypes = {
 ```
 
 ## rc
+**React ES6 Component with Constructor**
 
 ``` javascript
 import React, {
@@ -59,6 +59,7 @@ ${1}.propTypes = {
 ```
 
 ## rfunc
+**React ES6 Functional Component**
 
 ``` javascript
 import React, {
@@ -77,10 +78,18 @@ ${1}.propTypes = {
 ```
 
 ## rconst
+**React ES6 Constructor**
 
 ``` javascript
 constructor(props) {
   super(props);
   ${1}
 }
+```
+
+## rbm
+**React ES6 bind method to this**
+
+``` javascript
+this.${1} = this.${1}.bind(this);
 ```

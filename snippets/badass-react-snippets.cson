@@ -44,15 +44,6 @@
       };
     """
 
-  'React ES6 Constructor':
-    'prefix': 'rconst'
-    'body': """
-      constructor(props) {
-        super(props);
-        ${1}
-      }
-    """
-
   'React ES6 Functional Component':
     'prefix': 'rfunc'
     'body': """
@@ -69,4 +60,19 @@
       ${1}.propTypes = {
         style: PropTypes.number,
       };
+    """
+
+  'React ES6 Constructor':
+    'prefix': 'rconst'
+    'body': """
+      constructor(props) {
+        super(props);
+        ${1}
+      }
+    """
+
+  'React ES6 bind method to this':
+    'prefix': 'rbm',
+    'body': """
+      this.${1} = this.${1}.bind(this);
     """
