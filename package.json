@@ -1,12 +1,14 @@
 {
   "name": "badass-react-snippets",
   "version": "0.0.1",
-  "description": "Only the finest React ES6 snippets for Atom",
+  "description": "Only the finest airbnb compliant React/React-Native ES6 snippets for Atom",
   "keywords": [
     "react",
     "ES6",
     "babel",
-    "snippets"
+    "snippets",
+    "airbnb",
+    "react-native"
   ],
   "scripts": {
     "test": "gulp"
