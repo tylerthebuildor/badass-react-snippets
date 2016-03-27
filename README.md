@@ -22,7 +22,7 @@ After install just type one of the titles below and hit tab then the snippet wil
 Continue hitting tab to cycle through and highlight common editing points in a snippet. The `${N}` syntax in the examples below denote the highlight points.
 
 ## rcc
-**React ES6 Component**
+**React ES6 Component with Constructor**
 
 ``` javascript
 import React, {
@@ -47,7 +47,7 @@ ${1}.propTypes = {
 ```
 
 ## rc
-**React ES6 Component with Constructor**
+**React ES6 Component**
 
 ``` javascript
 import React, {

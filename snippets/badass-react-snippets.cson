@@ -1,25 +1,5 @@
 ".source.js, .source.jsx":
 
-  "React ES6 Component":
-    "prefix": "rc",
-    "body": """
-      import React, {
-        PropTypes,
-      } from 'react${2:-native}';
-
-      export default class ${1:MyComponent} extends React.Component {
-        render() {
-          return (
-            ${3:<View></View>}
-          );
-        }
-      }
-
-      ${1}.propTypes = {
-        style: PropTypes.number,
-      };
-    """
-
   "React ES6 Component with Constructor":
     "prefix": "rcc",
     "body": """
@@ -44,6 +24,26 @@
       };
     """
 
+  "React ES6 Component":
+    "prefix": "rc",
+    "body": """
+      import React, {
+        PropTypes,
+      } from 'react${2:-native}';
+
+      export default class ${1:MyComponent} extends React.Component {
+        render() {
+          return (
+            ${3:<View></View>}
+          );
+        }
+      }
+
+      ${1}.propTypes = {
+        style: PropTypes.number,
+      };
+    """
+    
   'React ES6 Functional Component':
     'prefix': 'rfunc'
     'body': """
