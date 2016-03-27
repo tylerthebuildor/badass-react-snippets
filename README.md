@@ -11,6 +11,8 @@ apm link
 
 After install just type one of the titles below and hit tab then the snippet will expand in your editor. Only works on files already saved as `.js`
 
+These snippets are made to work with the latest ES6 standards and are React/React-Native agnostic.
+
 
 ## rcc
 **React ES6 Component**
@@ -18,7 +20,7 @@ After install just type one of the titles below and hit tab then the snippet wil
 ``` javascript
 import React, {
   PropTypes,
-} from 'react';
+} from 'react${2:-native}';
 
 export default class ${1:MyComponent} extends React.Component {
   constructor(props) {
@@ -27,7 +29,7 @@ export default class ${1:MyComponent} extends React.Component {
 
   render() {
     return (
-      ${2:<View></View>}
+      ${3:<View></View>}
     );
   }
 }
@@ -43,12 +45,12 @@ ${1}.propTypes = {
 ``` javascript
 import React, {
   PropTypes,
-} from 'react';
+} from 'react${2:-native}';
 
 export default class ${1:MyComponent} extends React.Component {
   render() {
     return (
-      ${2:<View></View>}
+      ${3:<View></View>}
     );
   }
 }
@@ -64,11 +66,11 @@ ${1}.propTypes = {
 ``` javascript
 import React, {
   PropTypes,
-} from 'react';
+} from 'react${2:-native}';
 
 export function ${1}(props) {
   return (
-    ${2:<View></View>}
+    ${3:<View></View>}
   );
 }
 

@@ -5,12 +5,12 @@
     "body": """
       import React, {
         PropTypes,
-      } from 'react-native';
+      } from 'react${2:-native}';
 
       export default class ${1:MyComponent} extends React.Component {
         render() {
           return (
-            ${2:<View></View>}
+            ${3:<View></View>}
           );
         }
       }
@@ -25,7 +25,7 @@
     "body": """
       import React, {
         PropTypes,
-      } from 'react-native';
+      } from 'react${2:-native}';
 
       export default class ${1:MyComponent} extends React.Component {
         constructor(props) {
@@ -34,7 +34,7 @@
 
         render() {
           return (
-            ${2:<View></View>}
+            ${3:<View></View>}
           );
         }
       }
@@ -49,11 +49,11 @@
     'body': """
       import React, {
         PropTypes,
-      } from 'react-native';
+      } from 'react${2:-native}';
 
       export function ${1}(props) {
         return (
-          ${2:<View></View>}
+          ${3:<View></View>}
         );
       }
 
