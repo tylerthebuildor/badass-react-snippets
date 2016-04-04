@@ -20,7 +20,7 @@
       }
 
       ${1}.propTypes = {
-        style: PropTypes.number,
+        style: PropTypes.any,
       };
     """
 
@@ -40,10 +40,10 @@
       }
 
       ${1}.propTypes = {
-        style: PropTypes.number,
+        style: PropTypes.any,
       };
     """
-    
+
   'React ES6 Functional Component':
     'prefix': 'rfunc'
     'body': """
@@ -58,7 +58,7 @@
       }
 
       ${1}.propTypes = {
-        style: PropTypes.number,
+        style: PropTypes.any,
       };
     """
 

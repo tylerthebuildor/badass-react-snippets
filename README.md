@@ -42,7 +42,7 @@ export default class ${1:MyComponent} extends React.Component {
 }
 
 ${1}.propTypes = {
-  style: PropTypes.number,
+  style: PropTypes.any,
 };
 ```
 
@@ -63,7 +63,7 @@ export default class ${1:MyComponent} extends React.Component {
 }
 
 ${1}.propTypes = {
-  style: PropTypes.number,
+  style: PropTypes.any,
 };
 ```
 
@@ -82,7 +82,7 @@ export function ${1}(props) {
 }
 
 ${1}.propTypes = {
-  style: PropTypes.number,
+  style: PropTypes.any,
 };
 ```
 
