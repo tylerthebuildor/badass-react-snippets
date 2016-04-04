@@ -22,6 +22,8 @@
       ${1}.propTypes = {
         style: PropTypes.any,
       };
+
+      ${1}.defaultProps = {};
     """
 
   "React ES6 Component":
@@ -42,6 +44,8 @@
       ${1}.propTypes = {
         style: PropTypes.any,
       };
+
+      ${1}.defaultProps = {};
     """
 
   'React ES6 Functional Component':
@@ -60,6 +64,8 @@
       ${1}.propTypes = {
         style: PropTypes.any,
       };
+
+      ${1}.defaultProps = {};
     """
 
   'React ES6 Constructor':

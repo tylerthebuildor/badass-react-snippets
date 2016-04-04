@@ -44,6 +44,8 @@ export default class ${1:MyComponent} extends React.Component {
 ${1}.propTypes = {
   style: PropTypes.any,
 };
+
+${1}.defaultProps = {};
 ```
 
 ## rc
@@ -65,6 +67,8 @@ export default class ${1:MyComponent} extends React.Component {
 ${1}.propTypes = {
   style: PropTypes.any,
 };
+
+${1}.defaultProps = {};
 ```
 
 ## rfunc
@@ -84,6 +88,8 @@ export function ${1}(props) {
 ${1}.propTypes = {
   style: PropTypes.any,
 };
+
+${1}.defaultProps = {};
 ```
 
 ## rconst
