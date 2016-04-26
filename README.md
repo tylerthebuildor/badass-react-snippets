@@ -27,8 +27,12 @@ Continue hitting tab to cycle through and highlight common editing points in a s
 ``` javascript
 import React, {
   PropTypes,
-} from 'react${2:-native}';
-
+} from 'react';
+${2:
+import {
+  View,
+\\} from 'react-native';
+}
 export default class ${1:MyComponent} extends React.Component {
   constructor(props) {
     super(props);
@@ -41,11 +45,9 @@ export default class ${1:MyComponent} extends React.Component {
   }
 }
 
-${1}.propTypes = {
-  style: PropTypes.any,
-};
+${1:MyComponent}.propTypes = {};
 
-${1}.defaultProps = {};
+${1:MyComponent}.defaultProps = {};
 ```
 
 ## rc
@@ -54,8 +56,12 @@ ${1}.defaultProps = {};
 ``` javascript
 import React, {
   PropTypes,
-} from 'react${2:-native}';
-
+} from 'react';
+${2:
+import {
+  View,
+\\} from 'react-native';
+}
 export default class ${1:MyComponent} extends React.Component {
   render() {
     return (
@@ -64,11 +70,9 @@ export default class ${1:MyComponent} extends React.Component {
   }
 }
 
-${1}.propTypes = {
-  style: PropTypes.any,
-};
+${1:MyComponent}.propTypes = {};
 
-${1}.defaultProps = {};
+${1:MyComponent}.defaultProps = {};
 ```
 
 ## rfunc
@@ -77,19 +81,21 @@ ${1}.defaultProps = {};
 ``` javascript
 import React, {
   PropTypes,
-} from 'react${2:-native}';
-
-export function ${1}(props) {
+} from 'react';
+${2:
+import {
+  View,
+\\} from 'react-native';
+}
+export function ${1:MyComponent}(props) {
   return (
     ${3:<View></View>}
   );
 }
 
-${1}.propTypes = {
-  style: PropTypes.any,
-};
+${1:MyComponent}.propTypes = {};
 
-${1}.defaultProps = {};
+${1:MyComponent}.defaultProps = {};
 ```
 
 ## rconst

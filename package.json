@@ -4,11 +4,11 @@
   "description": "Only the finest airbnb compliant React/React-Native ES6 snippets for Atom",
   "keywords": [
     "react",
+    "react-native",
     "ES6",
     "babel",
     "snippets",
     "airbnb",
-    "react-native",
     "ES2015"
   ],
   "scripts": {
