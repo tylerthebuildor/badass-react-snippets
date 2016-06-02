@@ -1,7 +1,7 @@
 ".source.js, .source.jsx":
 
   "React ES6 Component with Constructor":
-    "prefix": "rcc",
+    "prefix": "rcc"
     "body": """
       import React, {
         PropTypes,
@@ -29,7 +29,7 @@
     """
 
   "React ES6 Component":
-    "prefix": "rc",
+    "prefix": "rc"
     "body": """
       import React, {
         PropTypes,
@@ -84,7 +84,7 @@
     """
 
   'React ES6 bind method to this':
-    'prefix': 'rbm',
+    'prefix': 'rbm'
     'body': """
       this.${1} = this.${1}.bind(this);
     """
