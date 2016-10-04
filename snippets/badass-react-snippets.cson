@@ -4,6 +4,7 @@
     "prefix": "rcc"
     "body": """
       import React, {
+        Component,
         PropTypes,
       } from 'react';
       ${2:
@@ -11,27 +12,37 @@
         View,
       \\} from 'react-native';
       }
-      export default class ${1:MyComponent} extends React.Component {
+      const propTypes = {};
+
+      const defaultProps = {};
+
+      export default class ${1:MyComponent} extends Component {
+
         constructor(props) {
           super(props);
+          this.state = {};
         }
 
         render() {
           return (
-            ${3:<View></View>}
+            ${3:<div>
+              <h1>Title</h1>
+            </div>}
           );
         }
+
       }
 
-      ${1:MyComponent}.propTypes = {};
+      ${1:MyComponent}.propTypes = propTypes;
+      ${1:MyComponent}.defaultProps = defaultProps;
 
-      ${1:MyComponent}.defaultProps = {};
     """
 
   "React ES6 Component":
     "prefix": "rc"
     "body": """
       import React, {
+        Component,
         PropTypes,
       } from 'react';
       ${2:
@@ -39,17 +50,25 @@
         View,
       \\} from 'react-native';
       }
-      export default class ${1:MyComponent} extends React.Component {
+      const propTypes = {};
+
+      const defaultProps = {};
+
+      export default class ${1:MyComponent} extends Component {
+
         render() {
           return (
-            ${3:<View></View>}
+            ${3:<div>
+              <h1>Title</h1>
+            </div>}
           );
         }
+
       }
 
-      ${1:MyComponent}.propTypes = {};
+      ${1:MyComponent}.propTypes = propTypes;
+      ${1:MyComponent}.defaultProps = defaultProps;
 
-      ${1:MyComponent}.defaultProps = {};
     """
 
   'React ES6 Functional Component':
@@ -63,15 +82,21 @@
         View,
       \\} from 'react-native';
       }
-      export function ${1:MyComponent}(props) {
+      const propTypes = {};
+
+      const defaultProps = {};
+
+      export default function ${1:MyComponent}(props) {
         return (
-          ${3:<View></View>}
+          ${3:<div>
+            <h1>Title</h1>
+          </div>}
         );
       }
 
-      ${1:MyComponent}.propTypes = {};
+      ${1:MyComponent}.propTypes = propTypes;
+      ${1:MyComponent}.defaultProps = defaultProps;
 
-      ${1:MyComponent}.defaultProps = {};
     """
 
   'React ES6 Constructor':
@@ -79,7 +104,9 @@
     'body': """
       constructor(props) {
         super(props);
-        ${1}
+        this.state = {
+          ${1},
+        };
       }
     """
 
@@ -87,4 +114,39 @@
     'prefix': 'rbm'
     'body': """
       this.${1} = this.${1}.bind(this);
+    """
+
+  "React ES6 Component with Constructor using static. Not airbnb compliant.":
+    "prefix": "rcc7"
+    "body": """
+      import React, {
+        Component,
+        PropTypes,
+      } from 'react';
+      ${2:
+      import {
+        View,
+      \\} from 'react-native';
+      }
+      export default class ${1:MyComponent} extends Component {
+
+        static defaultProps = {}
+
+        static propTypes = {}
+
+        constructor(props) {
+          super(props);
+          this.state = {};
+        }
+
+        render() {
+          return (
+            ${3:<div>
+              <h1>Title</h1>
+            </div>}
+          );
+        }
+
+      }
+
     """

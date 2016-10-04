@@ -6,7 +6,7 @@ These snippets are made to work with the latest ES6 standards, adhere to the [ai
 
 **Add the airbnb eslint config to your project (optional)**
 ```
-npm install --save-dev eslint-config-airbnb babel-eslint eslint-plugin-react eslint
+npm install --save-dev eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y
 echo '\''{ extends: [airbnb], }'\'' > .eslintrc'
 ```
 
@@ -19,98 +19,161 @@ apm install badass-react-snippets
 ## Usage
 After install just type one of the titles below and hit tab then the snippet will expand in your editor. Only works on files already saved as `.js` or `.jsx`
 
-Continue hitting tab to cycle through and highlight common editing points in a snippet. The `${N}` syntax in the examples below denote the highlight points.
+Continue hitting tab to cycle through and highlight common editing points in a component.
 
 ## rcc
 **React ES6 Component with Constructor**
 
-``` javascript
+``` jsx
 import React, {
+  Component,
   PropTypes,
 } from 'react';
-${2:
+
 import {
   View,
-\\} from 'react-native';
-}
-export default class ${1:MyComponent} extends React.Component {
+} from 'react-native';
+
+const propTypes = {};
+
+const defaultProps = {};
+
+export default class MyComponent extends Component {
+
   constructor(props) {
     super(props);
+    this.state = {};
   }
 
   render() {
     return (
-      ${3:<View></View>}
+      <div>
+        <h1>Title</h1>
+      </div>
     );
   }
+
 }
 
-${1:MyComponent}.propTypes = {};
+MyComponent.propTypes = propTypes;
+MyComponent.defaultProps = defaultProps;
 
-${1:MyComponent}.defaultProps = {};
 ```
 
 ## rc
 **React ES6 Component**
 
-``` javascript
+``` jsx
 import React, {
+  Component,
   PropTypes,
 } from 'react';
-${2:
+
 import {
   View,
-\\} from 'react-native';
-}
-export default class ${1:MyComponent} extends React.Component {
+} from 'react-native';
+
+const propTypes = {};
+
+const defaultProps = {};
+
+export default class MyComponent extends Component {
+
   render() {
     return (
-      ${3:<View></View>}
+      <div>
+        <h1>Title</h1>
+      </div>
     );
   }
+
 }
 
-${1:MyComponent}.propTypes = {};
+MyComponent.propTypes = propTypes;
+MyComponent.defaultProps = defaultProps;
 
-${1:MyComponent}.defaultProps = {};
 ```
 
 ## rfunc
 **React ES6 Functional Component**
 
-``` javascript
+``` jsx
 import React, {
   PropTypes,
 } from 'react';
-${2:
+
 import {
   View,
-\\} from 'react-native';
-}
-export function ${1:MyComponent}(props) {
+} from 'react-native';
+
+const propTypes = {};
+
+const defaultProps = {};
+
+export default function MyComponent(props) {
   return (
-    ${3:<View></View>}
+    <div>
+      <h1>Title</h1>
+    </div>
   );
 }
 
-${1:MyComponent}.propTypes = {};
+MyComponent.propTypes = propTypes;
+MyComponent.defaultProps = defaultProps;
 
-${1:MyComponent}.defaultProps = {};
 ```
 
 ## rconst
 **React ES6 Constructor**
 
-``` javascript
+``` jsx
 constructor(props) {
   super(props);
-  ${1}
+  this.state = {
+    someVariable,
+  };
 }
 ```
 
 ## rbm
 **React ES6 bind method to this**
 
-``` javascript
-this.${1} = this.${1}.bind(this);
+``` jsx
+this.someMethod = this.someMethod.bind(this);
+```
+
+## rcc7
+**React ES7 Component with Constructor using static. Not airbnb compliant.**
+
+``` jsx
+import React, {
+  Component,
+  PropTypes,
+} from 'react';
+
+import {
+  View,
+} from 'react-native';
+
+export default class MyComponent extends Component {
+
+  static defaultProps = {}
+
+  static propTypes = {}
+
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Title</h1>
+      </div>
+    );
+  }
+
+}
+
 ```
